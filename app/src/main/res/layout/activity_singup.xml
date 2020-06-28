@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Signup">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/carddesign"
+        android:orientation="vertical"
+        android:layout_height="100dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            android:textSize="25dp"
+            android:fontFamily="sans-serif"
+            android:layout_gravity="center"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="386dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            app:cardBackgroundColor="#fff"
+            app:cardCornerRadius="25dp"
+            app:cardMaxElevation="5dp"
+            app:cardElevation="10dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="362dp"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputEmail"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:elevation="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="20dp">
+                    <EditText
+                        android:id="@+id/cremail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#F4511E"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:textAllCaps="false"
+                        android:textColor="#111010" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="20dp">
+                    <EditText
+                        android:id="@+id/crpassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#F4511E"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:textAllCaps="false"
+                        android:textColor="#111010" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp">
+
+                    <EditText
+                        android:id="@+id/crcpassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#F4511E"
+                        android:hint="Confirm-Password"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:textAllCaps="false"
+                        android:textColor="#111010" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/signupuser"
+                    android:layout_width="135dp"
+                    android:layout_height="29dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/botton"
+                    android:text="Signup"
+                    android:textAllCaps="false"
+                    android:textColor="#ffff"></Button>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+        <Button
+            android:onClick="Login"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/botton"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="#ffff"></Button>
+    </LinearLayout>
+
+
+</LinearLayout>
